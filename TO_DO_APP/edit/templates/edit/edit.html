@@ -1,0 +1,13 @@
+{% extends "base.html" %} 
+{% block content %}
+<div class="row mt-4">
+	<div class="col">
+		<h2>Edit item:</h2>
+		<form action=" edit_todo/{{change.id}}" method="post" form-inline ">
+		<input type="text " name = "content" class="form-control mb-2 mr-sm-2 " value = "{{change.text}}"required>
+    <button type="submit " class="btn btn-primary mb-2 ">Submit</button>
+    </form>
+    <button onclick="window.history.back()" class="btn btn-primary mb-2 ">Back</button>
+  </div>
+</div>
+{% endblock content %}
